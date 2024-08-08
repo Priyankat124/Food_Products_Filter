@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+
+
+<h1>Let test javascript</h1>
+<button class="Priyanka">Priyanka1</button>
+<button class="Priyanka2">Priyanka2</button>
+
+<div class="images">
+    <div class="card">
+        <img src="Priyanka.jpg" alt="">
+        <span>Hii!</span>
+    </div>
+    
+    <div class="card">
+        <img src="Priyanka2.jpg" alt="">
+        <span>Hello!</span>
+    </div>
+    
+</div>
+
+  <script>
+
+
+let difnames = [{
+    name:"Hii!",
+    url:"Priyanka.jpg",
+
+},
+{
+    name:"Hello!",
+    url:"Priyanka2.jpg"
+}]
+
+
+difnames.forEach(element =>{
+   let buttons = document.getElementsByClassName('card');
+
+  if(element.name.toUpperCase() === buttons.innerText.toUpperCase()){
+    element.classList.remove('hide');
+  } else{
+    element.classList.add('hide');
+  }
+})
+
+
+  
+  
+  
+  
+  </script>  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <div id="search-container">
+        <input type="search" id="search-input" placeholder="Search your favourite...">
+<button id="search">Search</button>
+<div class="userref" style="position: relative;">
+    <i class="fa-solid fa-user-plus" style="color: #6759ff;"></i>
+  
+
+        <i class="fa-solid fa-cart-shopping" style="color: #6759ff; position: relative;"></i>
+    
+    
+</div>
+<div class="addtocart">0</div>
+
+
+    </div>
+  </div>
+
+</div>
+<div id="buttons">
+    <button  class="button-value" onclick ="filterProduct('All')"> All
+
+    </button>
+    <button class="button-value" onclick= "filterProduct('Delicious')">Delicious
+
+    </button>
+    <button class="button-value" onclick="filterProduct('Juice')">Juice
+
+    </button>
+    <button class="button-value" onclick="filterProduct('Freshness')"> Freshness
+
+    </button>
+    <button class="button-value" onclick="filterProduct('Feelings')"> Feelings
+
+    </button>
+</div>
+<div id = "products">
+
+
+</div>
+
+ <script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+
+
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    margin: 2em;
+    
+}
+button{
+    background-color: antiquewhite;
+}
+.hide{
+    display: none;
+}

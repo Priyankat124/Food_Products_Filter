@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color: #f5f8ff;
+}
+.wrapper{
+    width: 95%;
+    margin: 0,auto;
+
+}
+
+
+
+
+.fa-user-plus{
+    font-size: larger;
+}
+.fa-cart-shopping{
+    font-size: larger;
+}
+#search-container{
+   
+    margin: 1em 0;
+    display: flex;
+     align-items: center;
+}
+.userref{
+    width: 10%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-left:35%;
+}
+#search-container input{
+    background-color:transparent ;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+}
+
+#search-container input:focus{
+    border-bottom-color: #6759ff;
+
+}
+#search-container button{
+    padding: 1em 2em ;
+    margin-left: 1em;
+    background-color: #6759ff;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+#buttons button{
+    border: 2px solid #6759ff;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+
+}
+
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:1.5em ;
+    padding: 2em 0 ;
+}
+.card{
+    background-color: #ffff;
+    margin-top: 1em;
+    max-width: 18em;
+    box-shadow:1em 2em 2.5em rgb(1, 2, 68,0.08);
+    border-radius: 15px;
+    
+    
+}
+.card:hover{
+    
+    background-color: #a6b7f4;
+   
+   cursor: pointer;
+   box-shadow: 3em 2em 3em rgb(1, 2, 68,0.20);
+   
+}
+
+.image-container{
+  text-align: center;  
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+
+.container{
+    padding-top: 1em;
+    color: #110f29;
+    text-align: center;
+}
+.container h5{
+    font-weight: 500;
+   
+}
+.hide{
+    display: none;
+}
+.added{
+
+color: rgb(252, 252, 252);
+display: none;
+  
+}
+.addtocart{
+  position: absolute;
+    background-color: rgb(244, 214, 181);
+    padding: 2px;
+   margin-left: 85.8%;
+    border-radius: 40%;
+
+}
+@media screen and  (max-width: 720px){
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    } 
+    .card{
+        max-width: 10em;
+        margin-top: 1em;
+
+    }  
+    #products{
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em ;
+    } 
+    
+}
