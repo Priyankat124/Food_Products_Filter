@@ -71,6 +71,8 @@ body{
     grid-template-columns: auto auto auto;
     grid-column-gap:1.5em ;
     padding: 2em 0 ;
+    margin-left: 10%;
+
 }
 .card{
     background-color: #ffff;
